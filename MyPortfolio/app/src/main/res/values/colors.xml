@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colors1">#0bceaf</color>
+    <color name="bg_tint">#140BCEAF</color>
+
+    <array name="funny_colors">
+        <item>#ef0079</item>
+        <item>#0bceaf</item>
+        <item>#ffc107</item>
+        <item>#17a2b8</item>
+        <item>#dee2e6</item>
+    </array>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@mipmap/ic_launcher"
+    android:backgroundTint="@color/bg_tint"
+    android:backgroundTintMode="multiply"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/roundedImg"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="@color/colors1"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="clamp"
+        app:riv_oval="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+    <com.mursaat.extendedtextview.AnimatedGradientTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:colors="@array/funny_colors"
+        app:simultaneousColors="4"
+        app:angle="45"
+        app:speed="1000"
+        app:maxFPS="30"
+        android:text="@string/app_name"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_below="@id/roundedImg"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+    />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/color_loading"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        />
+
+
+</RelativeLayout>
